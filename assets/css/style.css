@@ -600,10 +600,19 @@ section {
   height: 100vh;
 }
 
+@media (max-width: 991px) {
+  .img-fluid{
+    max-width: 50%;
+  }
+}
+
 @media (max-width: 667px) {
   .img-fluid{
     max-width: 50%;
   }
+  .vbox-container img{
+  height: initial;
+}
 }
 
 /*-------------------------------------------------------------
@@ -643,6 +652,15 @@ section {
 .fa-linkedin:hover{
   font-size: 6.1rem;
   color: #4b7dab;
+}
+
+@media (max-width: 667px) {
+  .resume .section-content{
+    flex-direction: column;
+  }
+  .linkedin{
+    text-align: left;
+  }
 }
 
 
