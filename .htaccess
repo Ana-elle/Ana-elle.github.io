@@ -1,0 +1,11 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^anaellepaul\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.anaellepaul\.com$
+RewriteRule ^/?$ "https\:\/\/anaellepaul\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^anaellepaul\.feyg8907\.odns\.fr$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.anaellepaul\.feyg8907\.odns\.fr$
+RewriteRule ^/?$ "https\:\/\/anaellepaul\.com\/" [R=301,L]
+
